@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    background: #85f2ef;
+    overflow: hidden;
+  }
+  
+  .mainCont {
+    height: 100vh;
+    width: 100vw;
+    padding: 10;
+    position: relative;
+  }
+  
+  .mainImg {
+    height: 100%;
+    width: 100%;
+    max-width: 800;
+    object-fit: cover;
+    object-position: 50% 100%;
+  }
+  
+  .desktop {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .text {
+    font-family: "Spectral SC";
+  }
+  
+  .callText {
+    border-bottom: 1px solid black;
+  }
+  
+  .textColor {
+    color: white;
+  }
+  
+  form {
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .blackBox {
+    padding: 3%;
+    background: wheat;
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+  
+    #catcher {
+      font-size: 5vw;
+    }
+  }
+  
+  @media screen and (min-width: 750px) {
+    .desktop {
+      flex-direction: "row";
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .mainCont {
+      height: 100vh;
+      width: 100vw;
+      padding: 10;
+      position: relative;
+      padding: 2%;
+    }
+  
+    form {
+      bottom: 0%;
+      width: 40%;
+      margin-bottom: 2%;
+      position: relative;
+    }
+  
+    .mainImg {
+      height: 100%;
+      width: 50%;
+      max-width: 800;
+      object-fit: cover;
+      object-position: 50% 30%;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+  
+    .blackBox {
+      padding: 3%;
+      margin: 0;
+      background: wheat;
+      text-align: center;
+      justify-content: flex-end;
+      height: 100%;
+      width: 50%;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+  
+      #catcher {
+        font-size: 2vw;
+      }
+    }
+  
+    .logo {
+      z-index: 10;
+      top: 10%;
+      width: 50%;
+      margin-bottom: 2%;
+      position: relative;
+    }
+  
+    .textColor {
+      color: black;
+    }
+  }
