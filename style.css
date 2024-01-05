@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none !important;
 }
 
 body {
@@ -20,8 +21,11 @@ body {
 .mainImg {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: 50% 10%;
+  object-fit: contain;
+  object-position: center center;
+  background-image: url('/logoImage.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Ensure the background image covers the entire container */ /* Center the background image */
+  background-repeat: no-repeat;
 }
 
 
@@ -176,63 +180,6 @@ form {
   }
 }
 
-@media screen and (max-width: 503px) {
-  .textColor {
-    display: none;
-  }
-  .mainImg {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: 50% -250%;
-  }
-}
-
-@media screen and (max-width: 486px) {
-  .textColor {
-    display: none;
-  }
-  .mainImg {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: 50% -180%;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .textColor {
-    display: none;
-  }
-  .mainImg {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: 50% -12  0%;
-  }
-}
-
-@media screen and (max-width: 438px) {
-
-
-  .mainImg {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: 50% -100%;
-  }
-}
-
-@media screen and (max-width: 412px) {
-
-
-  .mainImg {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: 50% -70%;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
 
