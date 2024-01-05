@@ -112,10 +112,10 @@ form {
 
 
 .socials_text {
-  margin-left: 10px;
+  margin-left: 30px;
   font-family: "Spectral SC";
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 25px;
 }
 
@@ -179,6 +179,66 @@ form {
     color: black;
   }
 }
+
+@media screen and (max-width: 750px) {
+
+  .textColor {
+    display: none;
+  }
+  .mainImg {
+    height: 100%;
+    width: 100%;
+    background-image: url('/logoImage.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire container */ /* Center the background image */
+    background-repeat: no-repeat;
+  }
+  
+}
+
+@media screen and (max-width: 568px) {
+
+  .textColor {
+    display: none;
+  }
+  .mainImg {
+    /* Replace with the path to your image */
+    background-size: contain; /* Ensure the background image covers the entire container */ /* Center the background image */
+    background-position-y: -200px;
+
+  }
+  
+}
+
+@media screen and (max-width: 484px) {
+
+  .mainImg {
+    /* Replace with the path to your image */
+    background-size: contain; /* Ensure the background image covers the entire container */ /* Center the background image */
+    background-position-y: -140px;
+
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+
+  
+  
+}
+
+@media screen and (max-width: 414px) {
+
+  .mainImg {
+    /* Replace with the path to your image */
+    background-size: contain; /* Ensure the background image covers the entire container */ /* Center the background image */
+    background-position-y: -100px;
+
+  }
+  
+}
+
+
+
 
 
 /*# sourceMappingURL=style.css.map */
